@@ -1,0 +1,25 @@
+.wrapper {
+	display: grid;
+	min-height: 100vh;
+	/* Ширина столбцов */
+	grid-template-columns: 1fr;
+	/*  */
+	grid-template-rows: auto 1fr auto;
+	/* Сетка */
+	grid-template-areas:
+		"header" 
+		"main"
+		"footer";
+}
+
+.header {
+	grid-area: header;
+}
+
+.main {
+	grid-area: main;
+}
+
+.footer {
+	grid-area: footer;
+}

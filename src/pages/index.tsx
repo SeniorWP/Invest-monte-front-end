@@ -1,8 +1,11 @@
+import Home from '@/components/screens/home/Home'
 import { NextPage } from 'next'
 
 const HomePage: NextPage = () => {
   return (
-    <div>HomePage</div>
+      <>
+        <Home/>
+      </>
   )
 }
 export default HomePage
