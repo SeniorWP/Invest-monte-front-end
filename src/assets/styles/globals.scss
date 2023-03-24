@@ -7,19 +7,20 @@
 
   --color-primary: #848484;
   --color-active: #FA4500;
+  --color-active-hover: rgba(250, 69, 0, 0.5);
   --color-dark: #333333;  
+  --color-white: #FFFEFE;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 
 html,
 body {
     margin: 0;
-    min-width: 360px;
     min-height: 100%;
     font-weight: 300;
     font-size: 16px;
@@ -27,7 +28,8 @@ body {
 }
 
 .container {
-  margin: 0 auto;
-  padding-left: 0 15px;
+  width: 100%;
   max-width: 1248px;
+  margin: 0 auto;
+  padding: 15px;
 }

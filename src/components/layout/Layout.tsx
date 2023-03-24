@@ -11,11 +11,11 @@ interface IProps {
 
 const Layout: FC<IProps> = ({ children }) => {
 	return (
-			<div className={styles.wrapper}>
-				<Header className={styles.header} />
-					<main className={styles.main}>{children}</main>
-				<Footer className={styles.footer} />
-			</div>
+		<div className={styles.wrapper}>
+			<Header className={styles.header} />
+			<main className={styles.main}>{children}</main>
+			<Footer className={styles.footer} />
+		</div>
 	)
 }
 export default Layout

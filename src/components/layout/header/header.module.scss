@@ -1,13 +1,11 @@
 .header {
     min-height: 87px;
-}
-
-.container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+	padding: 29px 0;
 }
+
 
 .content {
 	background-color:aquamarine;
