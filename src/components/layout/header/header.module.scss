@@ -6,7 +6,23 @@
 	padding: 29px 0;
 }
 
+.buttonGroup {
+    display: flex;
+    align-items: center;
+}
 
-.content {
-	background-color:aquamarine;
+
+.buttonsNavigations {
+    display: flex;
+    margin-right: 30px;
+}
+
+.buttonsNavigations {
+    svg {
+        cursor: pointer;
+        font-size: 18px;
+        &:not(:last-child) {
+            margin-right: 22px;
+        }
+    }
 }

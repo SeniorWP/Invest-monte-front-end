@@ -1,3 +1,4 @@
+import Logo from '@/components/ui/logo/Logo'
 import clsx from 'clsx'
 import { FC } from 'react'
 
@@ -10,7 +11,9 @@ interface IProps {
 const Footer: FC<IProps> = ({ className, ...props }) => {
 	return (
 		<footer className={styles.footer} {...props}>
-			<div className={clsx('container', styles.footer)}>Footer</div>
+			<div className={clsx('container', styles.footer)}>
+				<Logo/>
+			</div>
 		</footer>
 	)
 }

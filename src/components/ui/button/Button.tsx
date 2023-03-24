@@ -19,7 +19,8 @@ const Button: FC<IProps> = ({
 	...props
 }) => {
 	const MyRipples = createRipples({
-		color: type === 'primary' ? 'rgba(255, 254, 254, 0.4)' : 'rgba(250, 69, 0, 0.4)',
+		color:
+			type === 'primary' ? 'rgba(255, 254, 254, 0.4)' : 'rgba(250, 69, 0, 0.4)',
 		during: 500,
 	})
 	return (

@@ -1,8 +1,14 @@
 import clsx from 'clsx'
 import { FC } from 'react'
-import { AiOutlineHeart, AiFillPlusCircle } from 'react-icons/ai'
+import {
+	AiFillPlusCircle,
+	AiOutlineMessage,
+	AiOutlineHeart,
+	AiOutlineBell
+} from 'react-icons/ai'
 
 import Button from '@/components/ui/button/Button'
+import Logo from '@/components/ui/logo/Logo'
 
 import styles from './header.module.scss'
 
@@ -16,12 +22,15 @@ const Header: FC<IProps> = ({ className, ...props }) => {
 			<Button startIcon={<AiFillPlusCircle />} type="primary">
 				Add Rental Listing
 			</Button>
-			
-			<AiOutlineHeart cursor={'pointer'} />
-			<div>logo</div>
-			<Button type="ghost">
-				Log in
-			</Button>
+			<Logo />
+			<section className={styles.buttonGroup}>
+				<div className={styles.buttonsNavigations}>
+					<AiOutlineMessage />
+					<AiOutlineHeart/>
+					<AiOutlineBell />
+				</div>
+				<Button type="ghost">Log in</Button>
+			</section>
 		</header>
 	)
 }
