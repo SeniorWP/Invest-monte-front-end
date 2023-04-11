@@ -1,0 +1,33 @@
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 15px;
+}
+
+.buttonGroup {
+    display: flex;
+    align-items: center;
+}
+
+
+.buttonsNavigations {
+    display: flex;
+    margin-right: 30px;
+}
+
+.buttonsNavigations {
+    column-gap: 22px;
+    svg {
+        cursor: pointer;
+        font-size: 18px;
+    }
+}

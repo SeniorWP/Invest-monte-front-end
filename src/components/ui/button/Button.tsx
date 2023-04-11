@@ -1,41 +1,41 @@
 import clsx from 'clsx'
-import { FC, ReactNode } from 'react'
-import { createRipples } from 'react-ripples'
+import { ButtonHTMLAttributes, FC, ReactNode } from 'react'
+import Ripple from 'react-ripples'
 
 import styles from './buttom.module.scss'
 
-interface IProps {
-	type?: 'primary' | 'ghost'
-	shape?: 'circle'
-	startIcon?: ReactNode
+interface IProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+	variant?: 'primary' | 'ghost'
+	icon?: ReactNode
+	small?: boolean
 	children: ReactNode
 }
 
 const Button: FC<IProps> = ({
-	type = 'primary',
-	shape,
-	startIcon,
+	variant = 'primary',
+	icon,
 	children,
+	small,
 	...props
 }) => {
-	const MyRipples = createRipples({
-		color:
-			type === 'primary' ? 'rgba(255, 254, 254, 0.4)' : 'rgba(250, 69, 0, 0.4)',
-		during: 500,
-	})
 	return (
-		<MyRipples>
+		<Ripple
+			className={styles.riple}
+			during={1000}
+			color={'var(--color-active-hover)'}
+		>
 			<button
 				className={clsx(styles.button, {
-					[styles.primary]: type === 'primary',
-					[styles.ghost]: type === 'ghost',
+					[styles.primary]: variant === 'primary',
+					[styles.ghost]: variant === 'ghost',
+					[styles.small]: small === true,
 				})}
 				{...props}
 			>
-				{startIcon && <span className={styles.startIcon}>{startIcon}</span>}
+				{icon && <span className={styles.startIcon}>{icon}</span>}
 				{children}
 			</button>
-		</MyRipples>
+		</Ripple>
 	)
 }
 export default Button

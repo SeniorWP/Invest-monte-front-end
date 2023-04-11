@@ -1,7 +1,7 @@
 import { Montserrat } from 'next/font/google'
 import { FC, ReactNode } from 'react'
 
-import Layout from '@/components/layout/Layout'
+import Layout from '@/features/Layout/Layout'
 
 interface IPtops {
 	children: ReactNode
