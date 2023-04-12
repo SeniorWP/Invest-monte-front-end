@@ -18,16 +18,11 @@
     align-items: center;
 }
 
-
 .buttonsNavigations {
     display: flex;
-    margin-right: 30px;
+    margin-right: 24px;
 }
 
 .buttonsNavigations {
-    column-gap: 22px;
-    svg {
-        cursor: pointer;
-        font-size: 18px;
-    }
+    column-gap: 16px;
 }

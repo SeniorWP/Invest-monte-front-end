@@ -8,13 +8,14 @@ interface IPtops {
 }
 
 const montserrat = Montserrat({
-	weight: ['400', '700'],
-	style: ['normal', 'italic'],
+	weight: ['400', '500', '600', '700'],
+	style: ['normal'],
 	subsets: ['latin'],
 })
 
 const MainProvider: FC<IPtops> = ({ children }) => {
 	return <Layout className={montserrat.className}>{children}</Layout>
+			
 }
 
 export default MainProvider

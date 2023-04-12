@@ -16,7 +16,7 @@ const Hero: FC = () => {
 				alt="Mountains"
 				src={MainImage}
 				placeholder="blur"
-        		quality={100}
+				quality={100}
 				sizes="100vw"
 				style={{
 					height: '678px',
@@ -27,7 +27,7 @@ const Hero: FC = () => {
 					position: 'absolute',
 				}}
 			/>
-			<Filter className={styles.filter}/>
+			<Filter className={styles.filter} />
 		</div>
 	)
 }

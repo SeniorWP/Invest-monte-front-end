@@ -16,17 +16,22 @@ const Header: FC = () => {
 	return (
 		<header className={styles.header}>
 			<div className={clsx('container', styles.container)}>
-				<Button icon={<AiFillPlusCircle />} variant="primary">
+				<Button startIcon={<AiFillPlusCircle />} variant="primary">
 					Add Rental Listing
 				</Button>
 				<Logo />
 				<div className={styles.buttonGroup}>
 					<div className={styles.buttonsNavigations}>
-						<AiOutlineMessage />
-						<AiOutlineHeart />
-						<AiOutlineBell />
+						<Button icon={<AiOutlineMessage />} />
+						<Button icon={<AiOutlineHeart />} />
+						<Button icon={<AiOutlineBell />} />
 					</div>
-					<Button small variant="ghost">
+					<Button
+						style={{
+							width: 80,
+						}}
+						variant="ghost"
+					>
 						Log in
 					</Button>
 				</div>

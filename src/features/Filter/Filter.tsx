@@ -90,11 +90,9 @@ const price = [
 interface IForm {
 	city: string[]
 	homeType: string[]
-	
 }
 
-
-const Filter: FC<IProps> = ({ className,  ...props }) => {
+const Filter: FC<IProps> = ({ className, ...props }) => {
 	const { register, handleSubmit, control, reset, formState } =
 		useForm<IForm>()
 
@@ -168,7 +166,10 @@ const Filter: FC<IProps> = ({ className,  ...props }) => {
 
 				<div className={styles.buttonsGroup}>
 					<Button
-						icon={<BsFillMapFill />}
+						startIcon={<BsFillMapFill />}
+						style={{
+							width: 150,
+						}}
 						variant="ghost"
 						name="otherButton"
 						onClick={handleClick}
@@ -176,6 +177,9 @@ const Filter: FC<IProps> = ({ className,  ...props }) => {
 						Map Search
 					</Button>
 					<Button
+						style={{
+							width: 150,
+						}}
 						variant="primary"
 						name="submitForm"
 						onClick={handleClick}
