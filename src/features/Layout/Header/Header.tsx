@@ -22,9 +22,15 @@ const Header: FC = () => {
 				<Logo />
 				<div className={styles.buttonGroup}>
 					<div className={styles.buttonsNavigations}>
-						<Button icon={<AiOutlineMessage />} />
-						<Button icon={<AiOutlineHeart />} />
-						<Button icon={<AiOutlineBell />} />
+						<Button icon>
+							<AiOutlineMessage />
+						</Button>
+						<Button icon>
+							<AiOutlineHeart />
+						</Button>
+						<Button icon>
+							<AiOutlineBell />
+						</Button>
 					</div>
 					<Button
 						style={{

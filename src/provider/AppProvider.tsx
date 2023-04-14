@@ -15,7 +15,6 @@ const montserrat = Montserrat({
 
 const MainProvider: FC<IPtops> = ({ children }) => {
 	return <Layout className={montserrat.className}>{children}</Layout>
-			
 }
 
 export default MainProvider

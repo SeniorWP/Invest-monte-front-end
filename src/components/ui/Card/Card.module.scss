@@ -1,0 +1,42 @@
+.container {
+	position: relative;
+	cursor: pointer;
+	border-radius: 4px;
+	overflow: hidden;
+	transition: 0.4s all ease-out;
+	&:hover {
+		filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
+		transition: 0.4s all ease-out;
+		
+		.title {
+			transition: 0.4s all ease-in-out;
+			color: var(--color-active);
+		}
+	}
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+	transition: 0.4s all ease-out;
+	border-radius: inherit;
+
+	&:hover {
+		transition: 0.4s all ease-out;
+		transform: scale(1.2);
+	}
+}
+
+.title {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	z-index: 10000;
+	font-weight: 600;
+	font-size: 40px;
+	line-height: 48px;
+	text-transform: uppercase;
+	color: var(--color-white);
+	transition: 0.4s all ease-out;
+	pointer-events: none;
+}

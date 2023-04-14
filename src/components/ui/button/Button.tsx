@@ -32,7 +32,6 @@ const Button: FC<IProps> = ({
 			})}
 			{...props}
 		>
-			{icon && <span>{icon}</span>}
 			{children}
 		</ButtonBase>
 	)
